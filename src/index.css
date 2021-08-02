@@ -1,13 +1,244 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navbar h1 {
+  color: #6666ff;
+  font-size: 30px;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  font-size: 20px;
+}
+.navbar a:hover {
+  color: #6666ff;
+}
+.mainbody {
+  height: 780px;
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+}
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Home page styles */
+.hero {
+  position: relative;
+  min-height: 57vh;
+  margin-top: 0rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+.hero-center {
+  max-width: var(--max-width);
+  display: grid;
+  align-items: center;
+}
+.hero-info h1 {
+  text-transform: none;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+.hero-info p {
+  max-width: 35em;
+  line-height: 1.8;
+}
+.hero-info a {
+  text-decoration: none;
+}
+.hero-images {
+  display: none;
+}
+/* hero media query */
+
+@media screen and (min-width: 800px) {
+  .hero::before {
+    background-size: contain;
+    height: 100%;
+  }
+  .hero-center {
+    grid-template-columns: 2fr 1fr;
+  }
+  .hero-info h1 {
+    font-size: 3rem;
+  }
+  .hero-info p {
+    font-size: 1.25rem;
+  }
+  .hero-images {
+    display: block;
+    justify-self: center;
+  }
+  .tree-img {
+    padding-left: 69px;
+    width: 27rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-center {
+    grid-template-columns: 2fr 1fr;
+    align-items: end;
+    padding-bottom: 5vh;
+  }
+  .hero-info h1 {
+    max-width: 100%;
+    font-size: 2.5rem;
+  }
+  .hero-images {
+    align-self: end;
+  }
+  .tree-img {
+    width: 15rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero-center {
+    padding-bottom: 10vh;
+  }
+  .tree-img {
+    width: 27rem;
+  }
+}
+.btn-startQuiz,
+.btn-showAllMajors {
+  background-color: #000;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  padding: 0px 15px;
+  border-radius: 0px;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 275px;
+  margin-bottom: 15px;
+  width: 250px;
+}
+.hero-info a:hover {
+  color: #6666ff;
+}
+.home-button-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* quiz */
+.quiz-container,
+.question-container,
+.about-container {
+  position: absolute;
+  height: 65%;
+  width: 67%;
+  top: 15%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-size: 3px 3px;
+  background-color: #FFFFFF;
+}
+.quiz-content,
+.questions-content {
+  text-align: center;
+  padding-top: 170px;
+}
+.quiz-content h1,
+h3 {
+  padding-bottom: 30px;
+}
+.quiz-button-inner {
+  display: flex;
+  justify-content: center;
+}
+.quiz-button-inner a {
+  text-decoration: none;
+}
+.quiz-button-inner a:hover {
+  color: #6666ff;
+}
+
+/* about */
+.about-content {
+  text-align: center;
+  padding-top: 65px;
+}
+.about-header p,
+.about-contact p {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin-block-start: 1em;
+  margin-block-end: 2em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+.about-contact a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #6666ff;
+}
+.about-contact div {
+  padding-top: 15px;
+}
+
+/* questions */
+.answer-option {
+  display: flex;
+  justify-content: space-evenly;
+}
+.question-answer {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
+  padding-top: 60px;
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 5px;
+  border: 2px solid #555;
+}
+input[type="checkbox"]:checked {
+  background: #6666ff;
+}
+.question-count {
+  font-size: 25px;
+  padding-bottom: 35px;
+}
+
+.quiz-time {
+  padding-bottom: 20px;
+}
+.time-text {
+  padding-left: 10px;
+  font-size: 20px;
 }
