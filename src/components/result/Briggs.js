@@ -94,7 +94,7 @@ class Briggs extends Component {
                 You tend to be sensitive and creative above all else.
                 `}
         majors={
-          "Education,Business Management,Arts,Business Administration,Communications & Journalism"
+          "Education,Business Management,Arts,Business Administration,Journalism"
         }
         onBackClick={this.onINFJ_click}
       />
@@ -260,7 +260,7 @@ class Briggs extends Component {
                   You tend to be passionate and imaginative above all else.
                   You should consider a job in teaching or the arts.`}
         majors={
-          "Education, Arts , Communications & Journalism, Public Relations , Urban Planning and Development"
+          "Education, Arts , Journalism, Public Relations , Urban Planning and Development"
         }
         onBackClick={this.onENFJ_click}
       />
