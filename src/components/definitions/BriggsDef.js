@@ -1,225 +1,359 @@
+import "./def.style.css";
+import {useHistory} from 'react-router'
 
+export const ISTJ = ({ majors, content, onBackClick }) => {
+  const history = useHistory() 
 
-export const ISTJ = ({ title, content, onBackClick }) => {
+  const openLink = (id) => {
+    history.push("/all-majors", {id} )
+}
   return (
-    <div className="container">
-      <div>
-        <h1>{title}</h1>
+    <div className="quiz-container">
+      <div className="result-display">
         <div className="close" onClick={onBackClick}>
           <i className="fa fa-times" aria-hidden="true" />
         </div>
         <p className="text-justify">{content}</p>
+
+        <p>Your top 5 majors are:</p>
+        <ul>
+          {majors.split(",").map((item, idx) => (
+            <li className="list" key={idx}>
+              <p onClick={()=>openLink(item)}>{item}</p>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export const ISFJ = ({ title, content, onBackClick }) => {
+export const ISFJ = ({ majors, content, onBackClick }) => {
   return (
-    <div className="container">
-      <div>
-        <h1>{title}</h1>
+    <div className="quiz-container">
+      <div className="result-display">
         <div className="close" onClick={onBackClick}>
           <i className="fa fa-times" aria-hidden="true" />
         </div>
         <p className="text-justify">{content}</p>
+
+        <p>Your top 5 majors are:</p>
+        <ul>
+          {majors.split(",").map((item, idx) => (
+            <li className="list" key={idx}>
+              <a href="/all-majors">{item}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export const INFJ = ({ title, content, onBackClick }) => {
+export const INFJ = ({ majors, content, onBackClick }) => {
   return (
-    <div className="container">
-      <div>
-        <h1>{title}</h1>
+    <div className="quiz-container">
+      <div className="result-display">
         <div className="close" onClick={onBackClick}>
           <i className="fa fa-times" aria-hidden="true" />
         </div>
         <p className="text-justify">{content}</p>
+
+        <p>Your top 5 majors are:</p>
+        <ul>
+          {majors.split(",").map((item, idx) => (
+            <li className="list" key={idx}>
+              <a href="/all-majors">{item}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export const INTJ = ({ title, content, onBackClick }) => {
+export const INTJ = ({ majors, content, onBackClick }) => {
   return (
-    <div className="container">
-      <div>
-        <h1>{title}</h1>
+    <div className="quiz-container">
+      <div className="result-display">
         <div className="close" onClick={onBackClick}>
           <i className="fa fa-times" aria-hidden="true" />
         </div>
         <p className="text-justify">{content}</p>
+
+        <p>Your top 5 majors are:</p>
+        <ul>
+          {majors.split(",").map((item, idx) => (
+            <li className="list" key={idx}>
+              <a href="/all-majors">{item}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export const ISTP = ({ title, content, onBackClick }) => {
+export const ISTP = ({ majors, content, onBackClick }) => {
   return (
-    <div className="container">
-      <div>
-        <h1>{title}</h1>
+    <div className="quiz-container">
+      <div className="result-display">
         <div className="close" onClick={onBackClick}>
           <i className="fa fa-times" aria-hidden="true" />
         </div>
         <p className="text-justify">{content}</p>
+
+        <p>Your top 5 majors are:</p>
+        <ul>
+          {majors.split(",").map((item, idx) => (
+            <li className="list" key={idx}>
+              <a href="/all-majors">{item}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export const ISFP = ({ title, content, onBackClick }) => {
+export const ISFP = ({ majors, content, onBackClick }) => {
   return (
-    <div className="container">
-      <div>
-        <h1>{title}</h1>
+    <div className="quiz-container">
+      <div className="result-display">
         <div className="close" onClick={onBackClick}>
           <i className="fa fa-times" aria-hidden="true" />
         </div>
         <p className="text-justify">{content}</p>
+
+        <p>Your top 5 majors are:</p>
+        <ul>
+          {majors.split(",").map((item, idx) => (
+            <li className="list" key={idx}>
+              <a href="/all-majors">{item}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export const INFP = ({ title, content, onBackClick }) => {
+export const INFP = ({ majors, content, onBackClick }) => {
   return (
-    <div className="container">
-      <div>
-        <h1>{title}</h1>
+    <div className="quiz-container">
+      <div className="result-display">
         <div className="close" onClick={onBackClick}>
           <i className="fa fa-times" aria-hidden="true" />
         </div>
         <p className="text-justify">{content}</p>
+
+        <p>Your top 5 majors are:</p>
+        <ul>
+          {majors.split(",").map((item, idx) => (
+            <li className="list" key={idx}>
+              <a href="/all-majors">{item}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export const INTP = ({ title, content, onBackClick }) => {
+export const INTP = ({ majors, content, onBackClick }) => {
   return (
-    <div className="container">
-      <div>
-        <h1>{title}</h1>
+    <div className="quiz-container">
+      <div className="result-display">
         <div className="close" onClick={onBackClick}>
           <i className="fa fa-times" aria-hidden="true" />
         </div>
         <p className="text-justify">{content}</p>
+
+        <p>Your top 5 majors are:</p>
+        <ul>
+          {majors.split(",").map((item, idx) => (
+            <li className="list" key={idx}>
+              <a href="/all-majors">{item}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export const ESTP = ({ title, content, onBackClick }) => {
+export const ESTP = ({ majors, content, onBackClick }) => {
   return (
-    <div className="container">
-      <div>
-        <h1>{title}</h1>
+    <div className="quiz-container">
+      <div className="result-display">
         <div className="close" onClick={onBackClick}>
           <i className="fa fa-times" aria-hidden="true" />
         </div>
         <p className="text-justify">{content}</p>
+
+        <p>Your top 5 majors are:</p>
+        <ul>
+          {majors.split(",").map((item, idx) => (
+            <li className="list" key={idx}>
+              <a href="/all-majors">{item}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export const ESFP = ({ title, content, onBackClick }) => {
+export const ESFP = ({ majors, content, onBackClick }) => {
   return (
-    <div className="container">
-      <div>
-        <h1>{title}</h1>
+    <div className="quiz-container">
+      <div className="result-display">
         <div className="close" onClick={onBackClick}>
           <i className="fa fa-times" aria-hidden="true" />
         </div>
         <p className="text-justify">{content}</p>
+
+        <p>Your top 5 majors are:</p>
+        <ul>
+          {majors.split(",").map((item, idx) => (
+            <li className="list" key={idx}>
+              <a href="/all-majors">{item}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export const ENFP = ({ title, content, onBackClick }) => {
+export const ENFP = ({ majors, content, onBackClick }) => {
   return (
-    <div className="container">
-      <div>
-        <h1>{title}</h1>
+    <div className="quiz-container">
+      <div className="result-display">
         <div className="close" onClick={onBackClick}>
           <i className="fa fa-times" aria-hidden="true" />
         </div>
         <p className="text-justify">{content}</p>
+
+        <p>Your top 5 majors are:</p>
+        <ul>
+          {majors.split(",").map((item, idx) => (
+            <li className="list" key={idx}>
+              <a href="/all-majors">{item}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export const ENTP = ({ title, content, onBackClick }) => {
+export const ENTP = ({ majors, content, onBackClick }) => {
   return (
-    <div className="container">
-      <div>
-        <h1>{title}</h1>
+    <div className="quiz-container">
+      <div className="result-display">
         <div className="close" onClick={onBackClick}>
           <i className="fa fa-times" aria-hidden="true" />
         </div>
         <p className="text-justify">{content}</p>
+
+        <p>Your top 5 majors are:</p>
+        <ul>
+          {majors.split(",").map((item, idx) => (
+            <li className="list" key={idx}>
+              <a href="/all-majors">{item}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export const ESTJ = ({ title, content, onBackClick }) => {
+export const ESTJ = ({ majors, content, onBackClick }) => {
   return (
-    <div className="container">
-      <div>
-        <h1>{title}</h1>
+    <div className="quiz-container">
+      <div className="result-display">
         <div className="close" onClick={onBackClick}>
           <i className="fa fa-times" aria-hidden="true" />
         </div>
         <p className="text-justify">{content}</p>
+
+        <p>Your top 5 majors are:</p>
+        <ul>
+          {majors.split(",").map((item, idx) => (
+            <li className="list" key={idx}>
+              <a href="/all-majors">{item}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export const ESFJ = ({ title, content, onBackClick }) => {
+export const ESFJ = ({ majors, content, onBackClick }) => {
   return (
-    <div className="container">
-      <div>
-        <h1>{title}</h1>
+    <div className="quiz-container">
+      <div className="result-display">
         <div className="close" onClick={onBackClick}>
           <i className="fa fa-times" aria-hidden="true" />
         </div>
         <p className="text-justify">{content}</p>
+
+        <p>Your top 5 majors are:</p>
+        <ul>
+          {majors.split(",").map((item, idx) => (
+            <li className="list" key={idx}>
+              <a href="/all-majors">{item}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export const ENFJ = ({ title, content, onBackClick }) => {
+export const ENFJ = ({ majors, content, onBackClick }) => {
   return (
-    <div className="container">
-      <div>
-        <h1>{title}</h1>
+    <div className="quiz-container">
+      <div className="result-display">
         <div className="close" onClick={onBackClick}>
           <i className="fa fa-times" aria-hidden="true" />
         </div>
         <p className="text-justify">{content}</p>
+
+        <p>Your top 5 majors are:</p>
+        <ul>
+          {majors.split(",").map((item, idx) => (
+            <li className="list" key={idx}>
+              <a href="/all-majors">{item}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export const ENTJ = ({ title, content, onBackClick }) => {
+export const ENTJ = ({ majors, content, onBackClick }) => {
   return (
-    <div className="container">
-      <div>
-        <h1>{title}</h1>
+    <div className="quiz-container">
+      <div className="result-display">
         <div className="close" onClick={onBackClick}>
           <i className="fa fa-times" aria-hidden="true" />
         </div>
         <p className="text-justify">{content}</p>
+
+        <p>Your top 5 majors are:</p>
+        <ul>
+          {majors.split(",").map((item, idx) => (
+            <li className="list" key={idx}>
+              <a href="/all-majors">{item}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
-  )
-}
+  );
+};

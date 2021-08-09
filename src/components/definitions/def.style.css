@@ -1,0 +1,15 @@
+.result-display p {
+  padding-bottom: 20px;
+}
+
+.list {
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+
+.check-lists {
+  font-size: 20px;
+}
+.check-lists .list-group-item {
+  padding-bottom: 5px;
+}

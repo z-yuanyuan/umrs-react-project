@@ -5,18 +5,22 @@ var majorList = [
     list: [
       {
         major_title: "GENERAL AGRICULTURE",
-        description: "",
-        sample_job_title: "",
+        description:
+          "The general agriculture program is designed to serve students who wish to pursue a college education in the broad area of agriculture. Traditionally, students who have been undecided about their future plans have selected this major to explore the various career options available to them in agriculture before selecting a major. Some students desiring to tailor a degree to meet their career objectives in production agriculture have majored in general agriculture.",
+        sample_job_title:
+          "A degree in agriculture gives you the knowledge and skills needed to manage agricultural and farm businesses, or to work in areas such as agricultural sales, food production and farming journalism.",
+        related_job_options:
+          "Agricultural consultant, Estates manager, Farm manager,Fish farm manager, Plant breeder/geneticist, Rural practice surveyor, Soil scientist",
+        useful_job_options:
+          "Amenity horticulturist,Commercial horticulturist,Field trials officer,Forest/woodland manager,Horticultural consultant,Magazine journalist, Newspaper journalist, Sales executive",
       },
       {
         major_title: "AGRICULTURAL ECONOMICS",
-
         description: "",
-        sample_job_title: "",
+        sample_job_title: "this is the des",
       },
       {
         major_title: "ANIMAL SCIENCES",
-
         description: "",
         sample_job_title: "",
       },
@@ -250,9 +254,9 @@ var majorList = [
       },
     ],
   },
-  //5.Communications & Journalism
+  //5.Journalism
   {
-    major_category: "Communications & Journalism",
+    major_category: "Journalism",
     list: [
       {
         major_title: "COMMUNICATIONS",

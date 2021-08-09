@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
+import React from "react";
+import "./quiz-page.styles.css";
 
-const Quiz = () => {
+const QuizPage = () => {
   const h1Title = "Welcome To University Major Recommender System";
 
   return (
     <div className="quiz-container">
       <div className="quiz-content">
         <h1>{h1Title}</h1>
-        <h3>Quiz consists of 4 parts, each with 15 questions </h3>
+        <h3>Quiz consists of 40 questions </h3>
         <h3>
           The results will be displayed after the quiz has been completed.
         </h3>
@@ -19,7 +21,7 @@ const Quiz = () => {
                 width="18"
                 height="18"
                 viewBox="0 0 18 18"
-                class="mr-2 d-none d-md-block"
+                className="mr-2 d-none d-md-block"
               >
                 <g
                   fill="none"
@@ -35,9 +37,9 @@ const Quiz = () => {
                   </g>
                 </g>
               </svg>
-              <span className="time-text">Only takes 3 minutes </span>
+              <span className="time-text">Only takes 8 minutes </span>
             </div>
-            <Link to="/questions" class="btn-startQuiz">
+            <Link to="/questions" className="btn-startQuiz">
               start
             </Link>
           </div>
@@ -47,4 +49,4 @@ const Quiz = () => {
   );
 };
 
-export default Quiz;
+export default QuizPage;

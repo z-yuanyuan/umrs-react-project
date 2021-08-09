@@ -1,0 +1,30 @@
+.major {
+  margin: 10px 0;
+}
+.description {
+  padding-right: 30px;
+}
+.description p {
+  padding-bottom: 20px;
+}
+.major-description h4 {
+  font-size: large;
+  padding-bottom: 5px;
+}
+.major-description h5 {
+  font-size: inherit;
+  padding-bottom: 5px;
+}
+.major-title {
+  font-size: large;
+  padding-bottom: 10px;
+}
+.major-description {
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  background-color: #dbf0f9;
+  border-radius: 25px;
+}
+.sample-jobs {
+}

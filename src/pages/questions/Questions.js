@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import Quiz from "../components/quiz/Quiz";
-import Results from "../components/result/Results";
-import quizQuestions from "../api/quizQuestions";
+import Quiz from "../../components/quiz/Quiz";
+import Results from "../../components/result/Results";
+import quizQuestions from "../../api/quizQuestions"; //import quiz source
+import "./questions.styles.css";
 
 class Question extends Component {
   constructor(props) {
@@ -94,7 +95,7 @@ class Question extends Component {
   handleAnswerSelected(event) {
     this.setUserAnswer(event.currentTarget.value);
     if (this.state.questionId < quizQuestions.length) {
-      setTimeout(() => this.setNextQuestion(), 800);
+      setTimeout(() => this.setNextQuestion(), 200);
     } else {
       setTimeout(
         () =>
@@ -160,9 +161,7 @@ class Question extends Component {
     );
   }
 
-  // ===========================================================================
-  //                        set results
-  // ===========================================================================
+  //set results
   setResults(resultColors, resultLetters, resultBriggs) {
     if (resultColors.length >= 1) {
       this.setState({ resultColors: resultColors[0] });
@@ -175,9 +174,7 @@ class Question extends Component {
     }
   }
 
-  // ===========================================================================
-  //                    functions to render quiz
-  // ===========================================================================
+  //Render quiz
   renderQuiz() {
     return (
       <Quiz
@@ -191,25 +188,25 @@ class Question extends Component {
     );
   }
 
-  // ===========================================================================
-  //                    functions to render result
-  // ===========================================================================
+  //Render results
   renderResult() {
     return (
       <Results
+        resultBriggs={this.state.resultBriggs}
         resultColors={this.state.resultColors}
         resultLetters={this.state.resultLetters}
-        resultBriggs={this.state.resultBriggs}
       />
     );
   }
 
-  // ===========================================================================
-  //                       render this question page
-  // ===========================================================================
+  //render this question page
   render() {
+    // let resultBriggs = this.state.resultBriggs;
+    // if (resultBriggs) {
+    //   return this.renderResult();
+    // }
     let resultBriggs = this.state.resultBriggs;
-    if (resultBriggs) {
+    if (this.state.questionId === 2) {
       return this.renderResult();
     }
     return (
@@ -221,35 +218,3 @@ class Question extends Component {
 }
 
 export default Question;
-
-// const Questions = () => {
-//   return (
-//     <div className="question-container">
-//       <div className="questions-content">
-//         <div className="questions-title">
-//           <h1>I have multiple interests and a natural curiosity about the world.</h1>
-//         </div>
-//         <div className="question-answer">
-//           <div>YES</div>
-//           <div>NO</div>
-//         </div>
-//         <div className="home-button-inner">
-//             <div>
-//               <p>Take the quiz</p>
-//               <a to="/quiz" class="btn-startQuiz">
-//                 start now
-//               </a>
-//             </div>
-//             <div>
-//               <p>Explore all majors</p>
-//               <a to="/majors" class="btn-showAllMajors">
-//                 explore
-//               </a>
-//             </div>
-//           </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Questions;

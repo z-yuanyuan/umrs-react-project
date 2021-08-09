@@ -1,0 +1,102 @@
+/* Home page styles */
+.hero {
+  position: relative;
+  min-height: 57vh;
+  margin-top: 0rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+.hero-center {
+  max-width: var(--max-width);
+  display: grid;
+  align-items: center;
+}
+.hero-info h1 {
+  text-transform: none;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+.hero-info p {
+  max-width: 35em;
+  line-height: 1.8;
+}
+.hero-info a {
+  text-decoration: none;
+}
+.hero-images {
+  display: none;
+}
+/* hero media query */
+@media screen and (min-width: 800px) {
+  .hero::before {
+    background-size: contain;
+    height: 100%;
+  }
+  .hero-center {
+    grid-template-columns: 2fr 1fr;
+  }
+  .hero-info h1 {
+    font-size: 3rem;
+  }
+  .hero-info p {
+    font-size: 1.25rem;
+  }
+  .hero-images {
+    display: block;
+    justify-self: center;
+  }
+  .tree-img {
+    padding-left: 69px;
+    width: 27rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-center {
+    grid-template-columns: 2fr 1fr;
+    align-items: end;
+    padding-bottom: 5vh;
+  }
+  .hero-info h1 {
+    max-width: 100%;
+    font-size: 2.5rem;
+  }
+  .hero-images {
+    align-self: end;
+  }
+  .tree-img {
+    width: 15rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero-center {
+    padding-bottom: 10vh;
+  }
+  .tree-img {
+    width: 27rem;
+  }
+}
+
+.btn-startQuiz,
+.btn-showAllMajors {
+  background-color: #000;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  padding: 0px 15px;
+  border-radius: 0px;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 275px;
+  margin-bottom: 15px;
+  width: 250px;
+}
+.hero-info a:hover {
+  color: #6666ff;
+}
+.home-button-inner {
+  display: flex;
+  justify-content: space-between;
+}

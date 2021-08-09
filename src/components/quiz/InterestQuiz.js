@@ -4,15 +4,8 @@ import QuestionCount from "./QuestionCount";
 import AnswerOption from "./AnswerOption";
 import "./answer-options.style.css";
 
-const Quiz = (props) => {
+const InterestQuiz = (props) => {
   const renderAnswerOptions = (key) => {
-    // console.log("id",props.questionId)
-    // if(props.questionId===2){
-    //   if(key.type==="YES"){
-  
-    //     console.log("yes")
-    //   }
-    // }
     return (
       <AnswerOption
         key={key.content}
@@ -24,7 +17,6 @@ const Quiz = (props) => {
       />
     );
   };
-
   return (
     <div key={props.questionId}>
       <QuestionCount counter={props.questionId} total={props.questionTotal} />
@@ -36,7 +28,7 @@ const Quiz = (props) => {
   );
 };
 
-Quiz.propTypes = {
+InterestQuiz.propTypes = {
   answer: propTypes.string.isRequired,
   answerOptions: propTypes.array.isRequired,
   counter: propTypes.number.isRequired,
@@ -46,4 +38,4 @@ Quiz.propTypes = {
   onAnswerSelected: propTypes.func.isRequired,
 };
 
-export default Quiz;
+export default InterestQuiz;

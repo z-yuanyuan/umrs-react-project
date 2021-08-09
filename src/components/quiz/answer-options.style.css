@@ -1,0 +1,37 @@
+/* questions */
+.answer-option {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .radioCustomLabel{
+    padding-left: 10px;
+  }
+  .question-answer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+    padding-top: 60px;
+  }
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid #555;
+  }
+  input[type="checkbox"]:checked {
+    background: #6666ff;
+  }
+  .question-count {
+    font-size: 25px;
+    padding-bottom: 35px;
+  }
+  
+  .quiz-time {
+    padding-bottom: 20px;
+  }
+  .time-text {
+    padding-left: 10px;
+    font-size: 20px;
+  }

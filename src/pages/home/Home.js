@@ -1,5 +1,7 @@
-import homeImg from "../images/hero-content-image.jpeg";
+import React from "react";
+import homeImg from "../../images/hero-content-image.jpeg";
 import { Link } from "react-router-dom";
+import "./home.styles.css";
 
 const Home = () => {
   return (
@@ -16,13 +18,13 @@ const Home = () => {
           <div className="home-button-inner">
             <div>
               <p>Take the quiz</p>
-              <Link to="/quiz" class="btn-startQuiz">
+              <Link to="/quiz" className="btn-startQuiz">
                 start now
               </Link>
             </div>
             <div>
               <p>Explore all majors</p>
-              <Link to="/all-majors" class="btn-showAllMajors">
+              <Link to="/all-majors" className="btn-showAllMajors">
                 explore
               </Link>
             </div>

@@ -1,0 +1,25 @@
+.quiz-container {
+  box-shadow: 4px 4px 8px 4px rgb(0 0 0 / 10%);
+  padding: 80px;
+  border-radius: 25px;
+  margin-top: 100px;
+}
+.quiz-content,
+.questions-content {
+  text-align: center;
+  padding-top: 50px;
+}
+.quiz-content h1,
+h3 {
+  padding-bottom: 30px;
+}
+.quiz-button-inner {
+  display: flex;
+  justify-content: center;
+}
+.quiz-button-inner a {
+  text-decoration: none;
+}
+.quiz-button-inner a:hover {
+  color: #6666ff;
+}

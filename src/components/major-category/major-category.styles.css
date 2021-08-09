@@ -1,0 +1,12 @@
+.major-category {
+  display: flex;
+  flex-direction: column;
+}
+.category-name {
+  font-size: larger;
+}
+.major-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
