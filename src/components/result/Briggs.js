@@ -63,10 +63,10 @@ class Briggs extends Component {
     return (
       <ISTJ
         content={`You are a type ISTJ, aka The Inspector.
-                You tend to be practical and logical above all else.
-                `}
+        ISTJ’s (Introverted, Sensing, Thinking, Judging) are known to be serious, practical, realistic, and logical people. 
+        Majors you would do well in include:`}
         majors={
-          "Engineering,Accounting,Arts,Business Administration,Journalism"
+          "Accounting and Finance,Business Management and Administration,Computer Science"
         }
         onBackClick={this.onISTJ_click}
       />
@@ -77,10 +77,10 @@ class Briggs extends Component {
     return (
       <ISFJ
         content={`You are a type ISFJ, aka The Protector.
-                  You tend to be sympathetic and organized above all else.
-                  `}
+        ISFJ’s (Introverted,Sensing, Feeling, Judging) are characteristically quiet, considerate, persistent, enjoy having order and can be a perfectionist at times. 
+        They would be great studying:`}
         majors={
-          "Education,Business Management,Art,Business Administration,Journalism"
+          "Accounting and Finance,Digital Media,English Language and Literature"
         }
         onBackClick={this.onISFJ_click}
       />
@@ -91,10 +91,11 @@ class Briggs extends Component {
     return (
       <INFJ
         content={`You are a type INFJ, aka The Counselor.
-                You tend to be sensitive and creative above all else.
-                `}
+        INFJ’s (Introverted, Intuition, Feeling, Judging) are insightful, empathetic, and seek to always improve the common good. 
+        Careers paths and majors they would thrive in include:
+                  `}
         majors={
-          "Education,Business Management,Arts,Business Administration,Journalism"
+          "Social Work,PHILOSOPHY AND RELIGIOUS STUDIES,EARLY CHILDHOOD EDUCATION"
         }
         onBackClick={this.onINFJ_click}
       />
@@ -105,9 +106,11 @@ class Briggs extends Component {
     return (
       <INTJ
         content={`You are a type INTJ, aka The Mastermind.
-                      You tend to be decisive and insightful above all else.
-                      `}
-        majors={"Architecture, Engineering, Art , Biochemistry, Biology"}
+        INTJ’s (Introverted, Intuition, Thinking, Judging) are problem solvers, “big picture” thinkers, and independent people. 
+        Careers paths and majors they would thrive in include:`}
+        majors={
+          "Digital Media,Education,Business Management and Administration"
+        }
         onBackClick={this.onINTJ_click}
       />
     );
@@ -117,11 +120,9 @@ class Briggs extends Component {
     return (
       <ISTP
         content={`You are a type ISTP, aka The Crafter.
-                  You tend to be analytical and practical above all else.
-                  `}
-        majors={
-          "Art, Business Administration, computer technology , Computer Science, Biology"
-        }
+        ISTP’s (Introverted, Sensing, Thinking, Perceiving) have analytical, flexible, efficient personality types. 
+        They have strong compatibility with majors below:`}
+        majors={"Business Management and Administration,Psychology,Social Work"}
         onBackClick={this.onISTP_click}
       />
     );
@@ -131,11 +132,9 @@ class Briggs extends Component {
     return (
       <ISFP
         content={`You are a type ISFP, aka The Composer.
-                  You tend to be loyal and adaptable above all else.
-                  `}
-        majors={
-          "Education, Nursing, Health Science , Medical Technology, Biology"
-        }
+        ISFP’s (Introverted, Sensing, Feeling, Perceiving) are known to be independent, loyal, and able to enjoy the present without focusing too much on the future. Because of these qualities, 
+        they would be well matched with a major in:`}
+        majors={"Mathematics,Social Work,General Argiculture"}
         onBackClick={this.onISFP_click}
       />
     );
@@ -145,11 +144,9 @@ class Briggs extends Component {
     return (
       <INFP
         content={`You are a type INFP, aka The Healer.
-                  You tend to be empathetic and inquisitive above all else.
-                 `}
-        majors={
-          "Education, Writing, Graphic Design , Apparel Design, Interior Design"
-        }
+        INFP’s (Introverted, Intuition, Feeling, Perceiving) are idealistic, curious, and are known to hold firmly to their values and beliefs. 
+        Because of these characteristics they would be good in:`}
+        majors={"EARLY CHILDHOOD EDUCATION,Social Work,Journalism"}
         onBackClick={this.onINFP_click}
       />
     );
@@ -159,11 +156,8 @@ class Briggs extends Component {
     return (
       <INTP
         content={`You are a type INTP, aka The Architect.
-                  You tend to be curious and analytical above all else.
-                  `}
-        majors={
-          "Anthropology, Architecture, Art , Telecommunications, Mathematical Economics"
-        }
+        INTP’s (Introverted, Intuition, Thinking, Perceiving) are logical, practical, critical, and great at solving abstract, in-depth problems. They would do well in:`}
+        majors={"Journalism,Computer Science,Social Work"}
         onBackClick={this.onINTP_click}
       />
     );
@@ -173,10 +167,9 @@ class Briggs extends Component {
     return (
       <ESTP
         content={`You are a type ESTP, aka The Promoter.
-                  You tend to be energetic and realistic above all else.
-                  `}
+        ESTP’s (Extroverted, Sensing, Thinking, Perceiving) learn best through action, are pragmatic and like to seek immediate results. They would do well in studying:`}
         majors={
-          "Marketing, Finance, Food Management , Landscape Architecture, Natural Resources and Environmental"
+          "Business Management and Administration,English Language and Literature,Mathematics"
         }
         onBackClick={this.onESTP_click}
       />
@@ -187,11 +180,8 @@ class Briggs extends Component {
     return (
       <ESFP
         content={`You are a type ESFP, aka The Performer.
-                  You tend to be caring and resourceful above all else.
-                  `}
-        majors={
-          "Hospitality, Health Care, Dental , Psychology,   Sociology, Child Life Specialist"
-        }
+        ESFP’s (Extroverted, Sensing, Feeling, Perceiving) are outgoing, enjoy working on a team, and like to be spontaneous. They would fit well in studying:`}
+        majors={"Visual and Performing Arts,Marketing,Music"}
         onBackClick={this.onESFP_click}
       />
     );
@@ -201,11 +191,8 @@ class Briggs extends Component {
     return (
       <ENFP
         content={`You are a type ENFP, aka The Champion.
-                  You tend to be imaginative and insightful above all else.
-                  You should consider a job in therapy or acting.`}
-        majors={
-          "Therapy, Acting, Art , Graphic Arts Management, Theatre, Marketing"
-        }
+        ENFP’s (Extroverted, Intuition, Feeling, Perceiving) are known to be good at improvising, are enthusiastic and imaginative. They would be well matched in:`}
+        majors={"English Language and Literature,Visual and Performing Arts"}
         onBackClick={this.onENFP_click}
       />
     );
@@ -215,11 +202,8 @@ class Briggs extends Component {
     return (
       <ENTP
         content={`You are a type ENTP, aka The Inventor.
-                  You tend to be enthusiastic and theoretical above all else.
-                  `}
-        majors={
-          "Business, Sports Management , English, Geology, Risk Management and Insurance"
-        }
+        ENTP’s (Extroverted, Intuition, Thinking, Perceiving) are problem solvers, outspoken, and often bore easily. They would do well in studying:`}
+        majors={"Business Management and Administration,Marketing"}
         onBackClick={this.onENTP_click}
       />
     );
@@ -229,11 +213,8 @@ class Briggs extends Component {
     return (
       <ESTJ
         content={`You are a type ESTJ, aka The Supervisor.
-                  You tend to be logical and assertive above all else.
-                  `}
-        majors={
-          "Business, Law , Project Management,Business Administration,  Criminal Justice and Criminology"
-        }
+        ESTJ’s (Extroverted, Sensing, Thinking, Judging) are matter-of-fact, decisive, and practical. Degrees that will accentuate their strengths include:`}
+        majors={"Computer Science,Mathematics,Law"}
         onBackClick={this.onESTJ_click}
       />
     );
@@ -243,11 +224,8 @@ class Briggs extends Component {
     return (
       <ESFJ
         content={`You are a type ESFJ, aka The Provider. 
-                  You tend to be sociable and caring above all else.
-                  `}
-        majors={
-          "Child Life Specialist, Counseling Psychology , Education, Health Science , Logistics and Supply Chain Management"
-        }
+        ESFJ’s (Extroverted, Sensing, Feeling, Judging) are to known to always seek harmony, are conscientious and warmhearted. They would do well pursuing a major in:`}
+        majors={"Business Management and Administration,NURSING"}
         onBackClick={this.onESFJ_click}
       />
     );
@@ -257,10 +235,9 @@ class Briggs extends Component {
     return (
       <ENFJ
         content={`You are a type ENFJ, aka The Teacher.
-                  You tend to be passionate and imaginative above all else.
-                  You should consider a job in teaching or the arts.`}
+        ENFJ’s (Extroverted, Intuition, Feeling, Judging) are natural leaders, good communicators, and often look to the interests of others. They would be highly compatible with:`}
         majors={
-          "Education, Arts , Journalism, Public Relations , Urban Planning and Development"
+          "Business Management and Administration,Education,Journalism,ADVERTISING AND PUBLIC RELATIONS"
         }
         onBackClick={this.onENFJ_click}
       />
@@ -271,11 +248,8 @@ class Briggs extends Component {
     return (
       <ENTJ
         content={`You are a type ENTJ, aka The Field Marshall.
-                  You tend to be organized and logical above all else.
-                  You should consider a job in law or engineering.`}
-        majors={
-          "International Business, Human Resource Management  , Construction Management ,Economics (Business) , Finance"
-        }
+        ENTJ’s (Extroverted, Intuition, Thinking, Judging) are known to be leaders, are blunt, interested in efficiency, and re great with long term planning and goal setting. Because of these qualities they would be well matched with:`}
+        majors={"Marketing,Education,Business Management and Administration"}
         onBackClick={this.onENTJ_click}
       />
     );
@@ -332,74 +306,77 @@ class Briggs extends Component {
       return this.renderENTJ();
     }
     return (
-      <div className="result-container">
-        <h1 className="">Result</h1>
-        <hr className="" />
-        <h2 className="">{this.props.resultBriggs}</h2>
-        <hr className="" />
-        <h3 className="lead">Check out your recommended majors:</h3>
-        <div className="check-lists">
-          <ul className="">
-            <li className="list-group-item" onClick={this.onISTJ_click}>
-              ISTJ
-            </li>
-            <li className="list-group-item" onClick={this.onISFJ_click}>
-              ISFJ
-            </li>
-            <li className="list-group-item" onClick={this.onINFJ_click}>
-              INFJ
-            </li>
-            <li className="list-group-item" onClick={this.onINTJ_click}>
-              INTJ
-            </li>
-          </ul>
-          <ul className="list-group briggs">
-            <li className="list-group-item" onClick={this.onISTP_click}>
-              ISTP
-            </li>
-            <li className="list-group-item" onClick={this.onISFP_click}>
-              ISFP
-            </li>
-            <li className="list-group-item" onClick={this.onINFP_click}>
-              INFP
-            </li>
-            <li className="list-group-item" onClick={this.onINTP_click}>
-              INTP
-            </li>
-          </ul>
-          <ul className="list-group briggs">
-            <li className="list-group-item" onClick={this.onESTP_click}>
-              ESTP
-            </li>
-            <li className="list-group-item" onClick={this.onESFP_click}>
-              ESFP
-            </li>
-            <li className="list-group-item" onClick={this.onENFP_click}>
-              ENFP
-            </li>
-            <li className="list-group-item" onClick={this.onENTP_click}>
-              ENTP
-            </li>
-          </ul>
-          <ul className="list-group briggs">
-            <li className="list-group-item" onClick={this.onESTJ_click}>
-              ESTJ
-            </li>
-            <li className="list-group-item" onClick={this.onESFJ_click}>
-              ESFJ
-            </li>
-            <li className="list-group-item" onClick={this.onENFJ_click}>
-              ENFJ
-            </li>
-            <li className="list-group-item" onClick={this.onENTJ_click}>
-              ENTJ
-            </li>
-          </ul>
+      <div className="">
+        <div className="result-container">
+          <h1 className="">Result</h1>
+          <hr className="" />
+          <h2 className="">{this.props.resultBriggs}</h2>
+          <hr className="" />
+          <h3 className="lead">
+            Select your result and check out your recommended majors:
+          </h3>
+          <div className="check-lists">
+            <ul className="">
+              <li className="list-group-item" onClick={this.onISTJ_click}>
+                ISTJ
+              </li>
+              <li className="list-group-item" onClick={this.onISFJ_click}>
+                ISFJ
+              </li>
+              <li className="list-group-item" onClick={this.onINFJ_click}>
+                INFJ
+              </li>
+              <li className="list-group-item" onClick={this.onINTJ_click}>
+                INTJ
+              </li>
+            </ul>
+            <ul className="list-group briggs">
+              <li className="list-group-item" onClick={this.onISTP_click}>
+                ISTP
+              </li>
+              <li className="list-group-item" onClick={this.onISFP_click}>
+                ISFP
+              </li>
+              <li className="list-group-item" onClick={this.onINFP_click}>
+                INFP
+              </li>
+              <li className="list-group-item" onClick={this.onINTP_click}>
+                INTP
+              </li>
+            </ul>
+            <ul className="list-group briggs">
+              <li className="list-group-item" onClick={this.onESTP_click}>
+                ESTP
+              </li>
+              <li className="list-group-item" onClick={this.onESFP_click}>
+                ESFP
+              </li>
+              <li className="list-group-item" onClick={this.onENFP_click}>
+                ENFP
+              </li>
+              <li className="list-group-item" onClick={this.onENTP_click}>
+                ENTP
+              </li>
+            </ul>
+            <ul className="list-group briggs">
+              <li className="list-group-item" onClick={this.onESTJ_click}>
+                ESTJ
+              </li>
+              <li className="list-group-item" onClick={this.onESFJ_click}>
+                ESFJ
+              </li>
+              <li className="list-group-item" onClick={this.onENFJ_click}>
+                ENFJ
+              </li>
+              <li className="list-group-item" onClick={this.onENTJ_click}>
+                ENTJ
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     );
   }
-
   onISTJ_click() {
     let showISTJ = this.state.showISTJ;
     this.setState({ showISTJ: !showISTJ });

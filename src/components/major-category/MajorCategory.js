@@ -6,18 +6,20 @@ import { useHistory } from "react-router";
 const MajorCategory = ({ major }) => {
   const history = useHistory();
   useEffect(() => {
-    let id = history.location.state.id;
-    if (id) {
-      const anchor = document.querySelector(`#${id}`);
-      anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+    if (history.location.state) {
+      let id = history.location.state.id;
+      console.log("id:", id);
+      //const anchor = document.querySelector(`#${id}`);
+      let anchor = Array.from(document.querySelectorAll("p")).find(
+        (el) => el.textContent === id
+      );
+      anchor.scrollIntoView({ behavior: "smooth", block: "start" }); //block positions: center, start, end
     }
   }, [history]);
 
   return (
     <div className="major-category">
-      <p id={`${major.major_category}`} className="category-name">
-        {major.major_category}
-      </p>
+      <p className="category-name">{major.major_category.toUpperCase()}</p>
       <div className="major-list">
         {major.list.length > 0 &&
           major.list.map((details, idx) => (

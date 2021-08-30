@@ -609,6 +609,49 @@ var quizQuestions = [
       },
     ],
   },
+  // question #41
+  {
+    question: "Do you prefer human behavior or art?",
+    answers: [
+      {
+        type: "S,Brown,D",
+        content: "Human behavior",
+      },
+      {
+        type: "S,Brown,D,No",
+        content: "Art",
+      },
+    ],
+  },
+  // question #42
+  {
+    question: "Do you prefer working in a lab or outside?",
+    answers: [
+      {
+
+        type: "S,Brown,D",
+        content: "Outside",
+      },
+      {
+        type: "S,Brown,D,No",
+        content: "Lab",
+      },
+    ],
+  },
+  // question #43
+  {
+    question: "Do you prefer working with people or numbers?",
+    answers: [
+      {
+        type: "S,Brown,D",
+        content: "People",
+      },
+      {
+        type: "I,Brown,D.No",
+        content: "Numbers",
+      },
+    ],
+  },
 ];
 
 export default quizQuestions;

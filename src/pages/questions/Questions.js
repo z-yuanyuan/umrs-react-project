@@ -201,12 +201,8 @@ class Question extends Component {
 
   //render this question page
   render() {
-    // let resultBriggs = this.state.resultBriggs;
-    // if (resultBriggs) {
-    //   return this.renderResult();
-    // }
     let resultBriggs = this.state.resultBriggs;
-    if (this.state.questionId === 2) {
+    if (resultBriggs) {
       return this.renderResult();
     }
     return (

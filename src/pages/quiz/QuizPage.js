@@ -9,7 +9,7 @@ const QuizPage = () => {
     <div className="quiz-container">
       <div className="quiz-content">
         <h1>{h1Title}</h1>
-        <h3>Quiz consists of 40 questions </h3>
+        <h3>Quiz consists of 43 questions </h3>
         <h3>
           The results will be displayed after the quiz has been completed.
         </h3>
@@ -37,7 +37,7 @@ const QuizPage = () => {
                   </g>
                 </g>
               </svg>
-              <span className="time-text">Only takes 8 minutes </span>
+              <span className="time-text">Only takes 6 minutes </span>
             </div>
             <Link to="/questions" className="btn-startQuiz">
               start

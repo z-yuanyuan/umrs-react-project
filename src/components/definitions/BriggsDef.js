@@ -1,12 +1,12 @@
 import "./def.style.css";
-import {useHistory} from 'react-router'
+import { useHistory } from "react-router";
 
 export const ISTJ = ({ majors, content, onBackClick }) => {
-  const history = useHistory() 
+  const history = useHistory();
 
   const openLink = (id) => {
-    history.push("/all-majors", {id} )
-}
+    history.push("/all-majors", { id });
+  };
   return (
     <div className="quiz-container">
       <div className="result-display">
@@ -15,11 +15,15 @@ export const ISTJ = ({ majors, content, onBackClick }) => {
         </div>
         <p className="text-justify">{content}</p>
 
-        <p>Your top 5 majors are:</p>
         <ul>
           {majors.split(",").map((item, idx) => (
             <li className="list" key={idx}>
-              <p onClick={()=>openLink(item)}>{item}</p>
+              <p
+                className="five-majors"
+                onClick={() => openLink(item.toUpperCase())}
+              >
+                {item}
+              </p>
             </li>
           ))}
         </ul>
@@ -29,6 +33,11 @@ export const ISTJ = ({ majors, content, onBackClick }) => {
 };
 
 export const ISFJ = ({ majors, content, onBackClick }) => {
+  const history = useHistory();
+
+  const openLink = (id) => {
+    history.push("/all-majors", { id });
+  };
   return (
     <div className="quiz-container">
       <div className="result-display">
@@ -37,11 +46,15 @@ export const ISFJ = ({ majors, content, onBackClick }) => {
         </div>
         <p className="text-justify">{content}</p>
 
-        <p>Your top 5 majors are:</p>
         <ul>
           {majors.split(",").map((item, idx) => (
             <li className="list" key={idx}>
-              <a href="/all-majors">{item}</a>
+              <p
+                className="five-majors"
+                onClick={() => openLink(item.toUpperCase())}
+              >
+                {item}
+              </p>
             </li>
           ))}
         </ul>
@@ -51,6 +64,11 @@ export const ISFJ = ({ majors, content, onBackClick }) => {
 };
 
 export const INFJ = ({ majors, content, onBackClick }) => {
+  const history = useHistory();
+
+  const openLink = (id) => {
+    history.push("/all-majors", { id });
+  };
   return (
     <div className="quiz-container">
       <div className="result-display">
@@ -59,11 +77,15 @@ export const INFJ = ({ majors, content, onBackClick }) => {
         </div>
         <p className="text-justify">{content}</p>
 
-        <p>Your top 5 majors are:</p>
         <ul>
           {majors.split(",").map((item, idx) => (
             <li className="list" key={idx}>
-              <a href="/all-majors">{item}</a>
+              <p
+                className="five-majors"
+                onClick={() => openLink(item.toUpperCase())}
+              >
+                {item}
+              </p>
             </li>
           ))}
         </ul>
@@ -73,6 +95,11 @@ export const INFJ = ({ majors, content, onBackClick }) => {
 };
 
 export const INTJ = ({ majors, content, onBackClick }) => {
+  const history = useHistory();
+
+  const openLink = (id) => {
+    history.push("/all-majors", { id });
+  };
   return (
     <div className="quiz-container">
       <div className="result-display">
@@ -81,11 +108,15 @@ export const INTJ = ({ majors, content, onBackClick }) => {
         </div>
         <p className="text-justify">{content}</p>
 
-        <p>Your top 5 majors are:</p>
         <ul>
           {majors.split(",").map((item, idx) => (
             <li className="list" key={idx}>
-              <a href="/all-majors">{item}</a>
+              <p
+                className="five-majors"
+                onClick={() => openLink(item.toUpperCase())}
+              >
+                {item}
+              </p>
             </li>
           ))}
         </ul>
@@ -95,6 +126,11 @@ export const INTJ = ({ majors, content, onBackClick }) => {
 };
 
 export const ISTP = ({ majors, content, onBackClick }) => {
+  const history = useHistory();
+
+  const openLink = (id) => {
+    history.push("/all-majors", { id });
+  };
   return (
     <div className="quiz-container">
       <div className="result-display">
@@ -103,11 +139,15 @@ export const ISTP = ({ majors, content, onBackClick }) => {
         </div>
         <p className="text-justify">{content}</p>
 
-        <p>Your top 5 majors are:</p>
         <ul>
           {majors.split(",").map((item, idx) => (
             <li className="list" key={idx}>
-              <a href="/all-majors">{item}</a>
+              <p
+                className="five-majors"
+                onClick={() => openLink(item.toUpperCase())}
+              >
+                {item}
+              </p>
             </li>
           ))}
         </ul>
@@ -117,6 +157,11 @@ export const ISTP = ({ majors, content, onBackClick }) => {
 };
 
 export const ISFP = ({ majors, content, onBackClick }) => {
+  const history = useHistory();
+
+  const openLink = (id) => {
+    history.push("/all-majors", { id });
+  };
   return (
     <div className="quiz-container">
       <div className="result-display">
@@ -125,11 +170,15 @@ export const ISFP = ({ majors, content, onBackClick }) => {
         </div>
         <p className="text-justify">{content}</p>
 
-        <p>Your top 5 majors are:</p>
         <ul>
           {majors.split(",").map((item, idx) => (
             <li className="list" key={idx}>
-              <a href="/all-majors">{item}</a>
+              <p
+                className="five-majors"
+                onClick={() => openLink(item.toUpperCase())}
+              >
+                {item}
+              </p>
             </li>
           ))}
         </ul>
@@ -139,6 +188,11 @@ export const ISFP = ({ majors, content, onBackClick }) => {
 };
 
 export const INFP = ({ majors, content, onBackClick }) => {
+  const history = useHistory();
+
+  const openLink = (id) => {
+    history.push("/all-majors", { id });
+  };
   return (
     <div className="quiz-container">
       <div className="result-display">
@@ -147,11 +201,15 @@ export const INFP = ({ majors, content, onBackClick }) => {
         </div>
         <p className="text-justify">{content}</p>
 
-        <p>Your top 5 majors are:</p>
         <ul>
           {majors.split(",").map((item, idx) => (
             <li className="list" key={idx}>
-              <a href="/all-majors">{item}</a>
+              <p
+                className="five-majors"
+                onClick={() => openLink(item.toUpperCase())}
+              >
+                {item}
+              </p>
             </li>
           ))}
         </ul>
@@ -161,6 +219,11 @@ export const INFP = ({ majors, content, onBackClick }) => {
 };
 
 export const INTP = ({ majors, content, onBackClick }) => {
+  const history = useHistory();
+
+  const openLink = (id) => {
+    history.push("/all-majors", { id });
+  };
   return (
     <div className="quiz-container">
       <div className="result-display">
@@ -169,11 +232,15 @@ export const INTP = ({ majors, content, onBackClick }) => {
         </div>
         <p className="text-justify">{content}</p>
 
-        <p>Your top 5 majors are:</p>
         <ul>
           {majors.split(",").map((item, idx) => (
             <li className="list" key={idx}>
-              <a href="/all-majors">{item}</a>
+              <p
+                className="five-majors"
+                onClick={() => openLink(item.toUpperCase())}
+              >
+                {item}
+              </p>
             </li>
           ))}
         </ul>
@@ -183,6 +250,11 @@ export const INTP = ({ majors, content, onBackClick }) => {
 };
 
 export const ESTP = ({ majors, content, onBackClick }) => {
+  const history = useHistory();
+
+  const openLink = (id) => {
+    history.push("/all-majors", { id });
+  };
   return (
     <div className="quiz-container">
       <div className="result-display">
@@ -191,11 +263,15 @@ export const ESTP = ({ majors, content, onBackClick }) => {
         </div>
         <p className="text-justify">{content}</p>
 
-        <p>Your top 5 majors are:</p>
         <ul>
           {majors.split(",").map((item, idx) => (
             <li className="list" key={idx}>
-              <a href="/all-majors">{item}</a>
+              <p
+                className="five-majors"
+                onClick={() => openLink(item.toUpperCase())}
+              >
+                {item}
+              </p>
             </li>
           ))}
         </ul>
@@ -205,6 +281,11 @@ export const ESTP = ({ majors, content, onBackClick }) => {
 };
 
 export const ESFP = ({ majors, content, onBackClick }) => {
+  const history = useHistory();
+
+  const openLink = (id) => {
+    history.push("/all-majors", { id });
+  };
   return (
     <div className="quiz-container">
       <div className="result-display">
@@ -213,11 +294,15 @@ export const ESFP = ({ majors, content, onBackClick }) => {
         </div>
         <p className="text-justify">{content}</p>
 
-        <p>Your top 5 majors are:</p>
         <ul>
           {majors.split(",").map((item, idx) => (
             <li className="list" key={idx}>
-              <a href="/all-majors">{item}</a>
+              <p
+                className="five-majors"
+                onClick={() => openLink(item.toUpperCase())}
+              >
+                {item}
+              </p>
             </li>
           ))}
         </ul>
@@ -227,6 +312,11 @@ export const ESFP = ({ majors, content, onBackClick }) => {
 };
 
 export const ENFP = ({ majors, content, onBackClick }) => {
+  const history = useHistory();
+
+  const openLink = (id) => {
+    history.push("/all-majors", { id });
+  };
   return (
     <div className="quiz-container">
       <div className="result-display">
@@ -235,11 +325,15 @@ export const ENFP = ({ majors, content, onBackClick }) => {
         </div>
         <p className="text-justify">{content}</p>
 
-        <p>Your top 5 majors are:</p>
         <ul>
           {majors.split(",").map((item, idx) => (
             <li className="list" key={idx}>
-              <a href="/all-majors">{item}</a>
+              <p
+                className="five-majors"
+                onClick={() => openLink(item.toUpperCase())}
+              >
+                {item}
+              </p>
             </li>
           ))}
         </ul>
@@ -249,6 +343,11 @@ export const ENFP = ({ majors, content, onBackClick }) => {
 };
 
 export const ENTP = ({ majors, content, onBackClick }) => {
+  const history = useHistory();
+
+  const openLink = (id) => {
+    history.push("/all-majors", { id });
+  };
   return (
     <div className="quiz-container">
       <div className="result-display">
@@ -257,11 +356,15 @@ export const ENTP = ({ majors, content, onBackClick }) => {
         </div>
         <p className="text-justify">{content}</p>
 
-        <p>Your top 5 majors are:</p>
         <ul>
           {majors.split(",").map((item, idx) => (
             <li className="list" key={idx}>
-              <a href="/all-majors">{item}</a>
+              <p
+                className="five-majors"
+                onClick={() => openLink(item.toUpperCase())}
+              >
+                {item}
+              </p>
             </li>
           ))}
         </ul>
@@ -271,6 +374,11 @@ export const ENTP = ({ majors, content, onBackClick }) => {
 };
 
 export const ESTJ = ({ majors, content, onBackClick }) => {
+  const history = useHistory();
+
+  const openLink = (id) => {
+    history.push("/all-majors", { id });
+  };
   return (
     <div className="quiz-container">
       <div className="result-display">
@@ -279,11 +387,15 @@ export const ESTJ = ({ majors, content, onBackClick }) => {
         </div>
         <p className="text-justify">{content}</p>
 
-        <p>Your top 5 majors are:</p>
         <ul>
           {majors.split(",").map((item, idx) => (
             <li className="list" key={idx}>
-              <a href="/all-majors">{item}</a>
+              <p
+                className="five-majors"
+                onClick={() => openLink(item.toUpperCase())}
+              >
+                {item}
+              </p>
             </li>
           ))}
         </ul>
@@ -293,6 +405,11 @@ export const ESTJ = ({ majors, content, onBackClick }) => {
 };
 
 export const ESFJ = ({ majors, content, onBackClick }) => {
+  const history = useHistory();
+
+  const openLink = (id) => {
+    history.push("/all-majors", { id });
+  };
   return (
     <div className="quiz-container">
       <div className="result-display">
@@ -301,11 +418,15 @@ export const ESFJ = ({ majors, content, onBackClick }) => {
         </div>
         <p className="text-justify">{content}</p>
 
-        <p>Your top 5 majors are:</p>
         <ul>
           {majors.split(",").map((item, idx) => (
             <li className="list" key={idx}>
-              <a href="/all-majors">{item}</a>
+              <p
+                className="five-majors"
+                onClick={() => openLink(item.toUpperCase())}
+              >
+                {item}
+              </p>
             </li>
           ))}
         </ul>
@@ -315,6 +436,11 @@ export const ESFJ = ({ majors, content, onBackClick }) => {
 };
 
 export const ENFJ = ({ majors, content, onBackClick }) => {
+  const history = useHistory();
+
+  const openLink = (id) => {
+    history.push("/all-majors", { id });
+  };
   return (
     <div className="quiz-container">
       <div className="result-display">
@@ -323,11 +449,15 @@ export const ENFJ = ({ majors, content, onBackClick }) => {
         </div>
         <p className="text-justify">{content}</p>
 
-        <p>Your top 5 majors are:</p>
         <ul>
           {majors.split(",").map((item, idx) => (
             <li className="list" key={idx}>
-              <a href="/all-majors">{item}</a>
+              <p
+                className="five-majors"
+                onClick={() => openLink(item.toUpperCase())}
+              >
+                {item}
+              </p>
             </li>
           ))}
         </ul>
@@ -337,6 +467,11 @@ export const ENFJ = ({ majors, content, onBackClick }) => {
 };
 
 export const ENTJ = ({ majors, content, onBackClick }) => {
+  const history = useHistory();
+
+  const openLink = (id) => {
+    history.push("/all-majors", { id });
+  };
   return (
     <div className="quiz-container">
       <div className="result-display">
@@ -345,11 +480,15 @@ export const ENTJ = ({ majors, content, onBackClick }) => {
         </div>
         <p className="text-justify">{content}</p>
 
-        <p>Your top 5 majors are:</p>
         <ul>
           {majors.split(",").map((item, idx) => (
             <li className="list" key={idx}>
-              <a href="/all-majors">{item}</a>
+              <p
+                className="five-majors"
+                onClick={() => openLink(item.toUpperCase())}
+              >
+                {item}
+              </p>
             </li>
           ))}
         </ul>

@@ -2,7 +2,8 @@
   margin: 10px 0;
 }
 .description {
-  padding-right: 30px;
+  width: 530px;
+  padding-right: 35px;
 }
 .description p {
   padding-bottom: 20px;
@@ -26,5 +27,18 @@
   background-color: #dbf0f9;
   border-radius: 25px;
 }
-.sample-jobs {
+.major-description-false {
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  background-color: #dbf0f9;
+  border-radius: 25px;
+}
+.major-description p {
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+.major-description li {
+  font-size: 17px;
+  padding-bottom: 5px;
 }

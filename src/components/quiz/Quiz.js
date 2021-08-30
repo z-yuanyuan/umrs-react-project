@@ -6,13 +6,6 @@ import "./answer-options.style.css";
 
 const Quiz = (props) => {
   const renderAnswerOptions = (key) => {
-    // console.log("id",props.questionId)
-    // if(props.questionId===2){
-    //   if(key.type==="YES"){
-  
-    //     console.log("yes")
-    //   }
-    // }
     return (
       <AnswerOption
         key={key.content}

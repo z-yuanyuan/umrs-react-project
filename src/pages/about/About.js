@@ -13,7 +13,7 @@ const About = () => {
             by Yuanyuan Zhou, a master's student at the University of
             Southampton, this UMRS is also a final project for my master's
             course. The aim of this system is to minimizing the search process
-            for choosing a major. By answering 40 quizzes that captures your
+            for choosing a major. By answering 43 quizzes that captures your
             interest, personality, potential career, the system will provide you
             majors that fit you most. It is not only recommended for you a
             university major, but it also helps you find the right path for your
